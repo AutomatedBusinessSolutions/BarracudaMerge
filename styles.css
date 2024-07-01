@@ -1,0 +1,82 @@
+body, html {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Calibri, sans-serif; /* Update font family */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    font-family: Calibri, sans-serif; /* Update font family */
+    border-radius: 10px; /* Rounded corners for the container */
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row; /* Set to row to make input boxes appear side by side */
+    justify-content: space-between; /* Distribute space between input boxes */
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-family: Calibri, sans-serif; /* Update font family */
+}
+
+.input-box {
+    width: calc(50% - 10px); /* Adjust width to 50% of container minus margin */
+    position: relative; /* Position relative for label positioning */
+    font-family: Calibri, sans-serif; /* Update font family */
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center; /* Center the label text */
+    position: absolute; /* Position absolute for label positioning */
+    top: -10px; /* Position the label at the top of the input box */
+    left: 50%; /* Position the label at horizontal center */
+    transform: translateX(-50%); /* Adjust for horizontal centering */
+    width: 100%;
+    font-family: Calibri, sans-serif; /* Update font family */
+}
+
+.input-container textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif; /* Update font family */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+textarea, button {
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif; /* Update font family */
+    border-radius: 5px; /* Rounded corners for inputs and button */
+}
+
+label[for="output"] {
+    margin-bottom: 10px; /* Adjust margin bottom to lower the gap */
+    margin-top: 20px;
+}
+
+.container button {
+    width: auto; /* Allow button to size based on content */
+    padding: 5px 10px; /* Adjust padding to control button size */
+    font-size: inherit; /* Inherit font size from parent */
+    font-family: Calibri, sans-serif; /* Update font family */
+    cursor: pointer; /* Add pointer cursor to button */
+    background-color: #5ba5e2; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default button border */
+}
+
+.container button:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+}

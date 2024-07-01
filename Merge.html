@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Lists</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to external CSS file -->
+    <!-- Reference the JavaScript file -->
+    <script src="mergeLists.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Merge Lists</h1>
+        <div class="input-container">
+            <div class="input-box">
+                <label for="list1">List 1:</label>
+                <br>
+                <textarea id="list1" rows="10" cols="50"></textarea>
+            </div>
+            <div class="input-box">
+                <label for="list2">List 2:</label>
+                <br>
+                <textarea id="list2" rows="10" cols="50"></textarea>
+            </div>
+        </div>
+        <button onclick="mergeLists(document.getElementById('list1').value, document.getElementById('list2').value)">Merge Lists</button>
+        <label for="output">Merged List:</label>
+        <textarea id="output" rows="20" cols="100" readonly></textarea>
+    </div>
+</body>
+</html>
